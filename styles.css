@@ -1,0 +1,88 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+/*Reset Styles*/
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End Browser Resets*/
+
+
+/*To Prevent Wrappers on floated elements from collapsing*/
+.clear {
+	content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*Base Styles*/
+img {
+	width: 350px;
+	height: 233px;
+}
+
+h1 {
+	font-family: lobster;
+	font-size: 36px;
+	margin: 15px 0px;
+}
+
+h2 {
+	clear: left;
+	padding: 20px 0px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+
+/*Image Gallery Styles*/
+div.row-1, div.row-2{
+	float: left;
+	margin: 0 30px;
+}
+
+.main-row-1, .main-row-2 {
+	margin: 30px auto;
+}
