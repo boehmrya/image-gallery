@@ -72,6 +72,17 @@ h2 {
 	padding: 20px 0px;
 }
 
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #7C8457;
+}
+
+a:hover, a:active {
+	color: #36231C;
+} 
+
+
+/*Header Styles*/
 h1, h2, div.subtitle {
 	text-align: center;
 }
@@ -91,11 +102,56 @@ div.subtitle {
 .row {
 	clear: left;
 	padding: 30px 0px;
-	width: 95%;
+	width: 97%;
 	margin: 0 auto;
+}
+
+.row:first-child {
+	padding-top: 0px;
 }
 
 .col {
 	float: left;
 	margin: 0 30px;
 }
+
+
+/*Navigation Menu*/
+.navigation li a {
+	padding: 5px 10px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 18px;
+}
+
+.navigation li a:hover {
+	color: #fff;
+	background: #757E4F;
+}
+
+
+.navigation li {
+	float: left;
+	margin-right: -5%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.navigation {
+	width: 37%;
+	margin: 40px auto;
+	content: "";
+  	clear: both;
+  	display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
