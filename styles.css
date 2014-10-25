@@ -50,8 +50,8 @@ table {
 /*To Prevent Wrappers on floated elements from collapsing*/
 .clear {
 	content: "";
-  clear: both;
-  display: table;
+  	clear: both;
+  	display: table;
 }
 
 
@@ -72,17 +72,30 @@ h2 {
 	padding: 20px 0px;
 }
 
-h1, h2 {
+h1, h2, div.subtitle {
 	text-align: center;
+}
+
+div.subtitle {
+	font-style: italic;
+	font-size: 22px;
 }
 
 
 /*Image Gallery Styles*/
-div.row-1, div.row-2{
-	float: left;
-	margin: 0 30px;
+.gallery-wrapper {
+	width: 90%;
+	margin: 0 auto;
 }
 
-.main-row-1, .main-row-2 {
-	margin: 30px auto;
+.row {
+	clear: left;
+	padding: 30px 0px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.col {
+	float: left;
+	margin: 0 30px;
 }
