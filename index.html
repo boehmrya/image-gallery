@@ -2,60 +2,276 @@
 <html>
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <title>Ryan Boehm's Image Gallery</title>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+    
+
+
+
+    <title>RWB</title>
   </head>
 
   <body>
+    <div id="main">
+      <div class="header-container">
+        <div class="logo-wrapper"><img class="logo" src="assets/logo.png"></div>
+        <ul class="navigation">
+          <li><a href="#tab-1">Monumental</a></li>
+          <li><a href="#tab-2">Panoramic</a></li>
+          <li><a href="#tab-3">Living</a></li>
+          <li><a href="#tab-4">Spiritual</a></li>
+          <li><a href="#tab-5">Natural</a></li>
 
-    <h1 id="page-title">Ryan Boehm's Image Gallery</h1>
-    <div class="subtitle">A Sense of place</div>
-
-    <ul class="navigation">
-      <li><a href="wester-vistas.html">Vistas</a></li>
-      <li><a href="yellowstone.html">Yellowstone</a></li>
-      <li><a href="grand-canyone.html">Grand Canyon</a></li>
-      <li><a href="badlands.html">Badlands</a></li>
-    </ul>
-
-    <div class="gallery-wrapper">
-
-      <div class="row">
-        <div class="col">
-          <img src="misc/mount_rushmore_2_original.jpg">
-          <figcaption>A sunlit view of Mt. Rushmore</figcaption>
-        </div>
-        <div class="col">
-          <img src="western_vistas/inside_big_arches_original.jpg">
-          <figcaption>Panoramic view at Arches National Park</figcaption>
-        </div>
-        <div class="col">
-          <img src="western_vistas/arches_1_original.jpg">
-          <figcaption>A glimpse through the main Arch</figcaption>
-        </div>
+        </ul>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <img src="yellowstone/yellowstone_lake_original.jpg">
-          <figcaption>Yellowstone Lake at 7700 Square Feet</figcaption>
-        </div>
-        <div class="col">
-          <img src="grand_canyon/lodge_original.jpg">
-          <figcaption>Grand Canyon - a view from the lodge</figcaption>
-        </div>
-        <div class="col">
-          <img src="western_vistas/lonely_road_2_original.jpg">
-          <figcaption>Somewhere in the Western U.S.</figcaption>
-        </div>
-      </div>
+      <div class="main-content-container">
 
+        <div class="tab-container">
+          <!--First Tab: Monumental-->
+          <div id="#tab-1" class="tab display">
+            <div class="row">
+              <div class="col">
+                <img src="images/misc/mount_rushmore_2_original_grid.jpg">
+                <figcaption>
+                  <h3>A sunlit view of Mt. Rushmore</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/western_vistas/inside_big_arches_original_grid.jpg">
+                <figcaption>
+                  <h3>Panoramic view at Arches National Park</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/western_vistas/big_arch_original_grid.jpg">
+                <figcaption>
+                  <h3>A glimpse through the main Arch</h3>
+                </figcaption>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="images/western_vistas/national_monument_2_original_grid.jpg">
+                <figcaption>
+                  <h3>Iconic National Monument</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/misc/rose_bowl_original_grid.jpg">
+                <figcaption>
+                  <h3>Quiet Day at the Stadium</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/western_vistas/national_monument_3_original_grid.jpg">
+                <figcaption>
+                  <h3>Dusty Vision of National Monument</h3>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--Second Tab: Panoramic-->
+           <div id="#tab-2" class="tab">
+            <div class="row">
+              <div class="col">
+                <img src="images/western_vistas/dark_vista_original_grid.jpg">
+                <figcaption>
+                  <h3>Somewhere at Dusk</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/western_vistas/surface_of_moon_original_grid.jpg">
+                <figcaption>
+                  <h3>A Glimpse of the Sun from the Moon</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/grand_canyon/lodge_original_grid.jpg">
+                <figcaption>
+                  <h3>Grand Canyon View from the Lodge</h3>
+                </figcaption>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                <img src="images/western_vistas/panoramic_canyons_original_grid.jpg">
+                <figcaption>
+                  <h3>Cathedral at Bryce</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/western_vistas/lonely_road_2_original_grid.jpg">
+                <figcaption>
+                  <h3>On a Lonely Western Road</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/yellowstone/yellowstone_lake_original_grid.jpg">
+                <figcaption>
+                  <h3>Yellowstone Lake at 7700 Feet</h3>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+
+
+
+            <!--Third Tab: Living-->
+           <div id="#tab-3" class="tab">
+            <div class="row">
+              <div class="col">
+                <img src="images/western_vistas/animal_rocks_original_grid.jpg">
+                <figcaption>
+                  <h3>Submarine Rock</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/western_vistas/bryce_2_original_grid.jpg">
+                <figcaption>
+                  <h3>Sprouting Hands at Bryce</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/misc/foggy_nyc_original_grid.jpg">
+                <figcaption>
+                  <h3>Misty New York</h3>
+                </figcaption>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="images/yellowstone/lava_river_original_grid.jpg">
+                <figcaption>
+                  <h3>Lava River</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/misc/children_at_play_original_grid.jpg">
+                <figcaption>
+                  <h3>Children at Play</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/yellowstone/volcano_original_grid.jpg">
+                <figcaption>
+                  <h3>Volcano Mania</h3>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+
+
+
+            <!--Fourth Tab: Spiritual-->
+           <div id="#tab-4" class="tab">
+            <div class="row">
+
+              <div class="col">
+                  <img src="images/nature/california_sunset_1_original_grid.jpg">
+                <figcaption>
+                  <h3>California Coast at Dusk</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/western_vistas/canyon_sunlight_2_original_grid.jpg">
+                <figcaption>
+                  <h3>Center of the Earth</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/nature/lake_in_iowa_original_grid.jpg">
+                <figcaption>
+                  <h3>Midwestern Lake in Summer</h3>
+                </figcaption>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="images/western_vistas/sunset_original_grid.jpg">
+                <figcaption>
+                  <h3>Western Sunset</h3>
+                </figcaption>
+              </div>
+               <div class="col">
+                <img src="images/western_vistas/magestic_canyon_view_original_grid.jpg">
+                <figcaption>
+                  <h3>Message from the Heavens</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                <img src="images/western_vistas/lonely_road_2_original_grid.jpg">
+                <figcaption>
+                  <h3>On a Lonely Western Road</h3>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+
+
+
+           <!--Fifth Tab: Natural-->
+           <div id="#tab-5" class="tab">
+            <div class="row">
+              <div class="col">
+                  <img src="images/nature/california_sunset_2_original_grid.jpg">
+                <figcaption>
+                  <h3>Malibou Sunset</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/nature/ic_forest_original_grid.jpg">
+                <figcaption>
+                  <h3>Solitude in an Iowa Forest</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/nature/california_sunset_1_original_grid.jpg">
+                <figcaption>
+                  <h3>California Coast at Dusk</h3>
+                </figcaption>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <img src="images/western_vistas/sunset_original_grid.jpg">
+                <figcaption>
+                  <h3>Big Sky Country</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/nature/lancaster_county_original_grid.jpg">
+                <figcaption>
+                  <h3>Lancaster County</h3>
+                </figcaption>
+              </div>
+              <div class="col">
+                  <img src="images/nature/spiritual_tree_original_grid.jpg">
+                <figcaption>
+                  <h3>Solitary Tree in Sunlight</h3>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+
+        <!--End Tab Container-->
+        </div>
+
+        <!--Leaflet Map-->
+        <div id="map"></div>
+        <script src="custom.js"></script>
+
+      </div>
     </div>
-    
-
   </body>
 </html>
